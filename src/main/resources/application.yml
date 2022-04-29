@@ -1,0 +1,21 @@
+server:
+  port: 9091
+#服务器的地址在本机跑的默认是localhost 端口可以自己设置
+#数据库的地址默认本机+数据库名字+用户名+密码
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.113.230.20:3306/ESG
+    username: user
+    password: ZQ97planned.
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #扫描所有mybatics的xml文件
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+files:
+  upload:
+    path: D:/IDEA2019/huaqibei/files/
